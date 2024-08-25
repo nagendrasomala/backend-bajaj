@@ -3,7 +3,9 @@ const app = express();
 app.use(express.json());
 const cors = require('cors');
 app.use(cors({
-    origin: 'https://frontend-bajaj-indol.vercel.app'
+  origin: 'https://frontend-bajaj-indol.vercel.app', // Allow this origin
+  methods: 'GET,POST,PUT,DELETE,OPTIONS',
+  allowedHeaders: 'Content-Type,Authorization'
 }));
 
 const PORT = 5000;

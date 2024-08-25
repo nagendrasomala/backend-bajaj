@@ -3,7 +3,7 @@ const app = express();
 app.use(express.json());
 const cors = require('cors');
 app.use(cors({
-    origin: 'http://localhost:3000'
+    origin: 'https://frontend-bajaj-indol.vercel.app'
 }));
 
 const PORT = 5000;

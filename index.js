@@ -11,7 +11,7 @@ app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
 
-app.post('/addData', (req, res) => {
+app.post('/bfhl', (req, res) => {
     const { data } = req.body;
     console.log(data);
 
@@ -44,7 +44,7 @@ app.post('/addData', (req, res) => {
 });
 
 
-app.get('/getData', (req, res) => {
+app.get('/bfhl', (req, res) => {
     res.status(200).json({
         operation_code: 1
     });
